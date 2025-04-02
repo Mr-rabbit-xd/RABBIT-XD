@@ -6,7 +6,7 @@ const repo = async (m, gss) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(" ")[0].toLowerCase() : "";
 
   if (["repo", "sc", "script", "info"].includes(cmd)) {
-    const githubRepoURL = "https://github.com/XdTechPro/JAWAD-MD";
+    const githubRepoURL = "Repo is now private publishing, before that, if you want to take repo, you have to pay 100 taka.";
 
     try {
       // Extract username and repo name from the URL
