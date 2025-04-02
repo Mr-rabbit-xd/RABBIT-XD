@@ -1,4 +1,3 @@
-import fs from 'fs';
 import config from '../config.cjs';
 
 const alive = async (m, Matrix) => {
@@ -14,10 +13,11 @@ const alive = async (m, Matrix) => {
 
   if (!['alive', 'uptime', 'runtime'].includes(cmd)) return;
 
-  const str = `*🤖 Bot Status: Online*\n*⏳ Uptime: ${timeString}*`;
+  const str = `*🐰 Rabbit XD is Alive!*
+*⏳ Uptime: ${timeString}*`;
 
   await Matrix.sendMessage(m.from, {
-    image: fs.readFileSync('./media/khan.jpg'),
+    image: { url: "https://files.catbox.moe/clj910.jpeg" }, 
     caption: str,
     contextInfo: {
       mentionedJid: [m.sender],
